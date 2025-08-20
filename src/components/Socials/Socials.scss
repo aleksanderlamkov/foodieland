@@ -1,0 +1,28 @@
+.soc1als {
+  &__list {
+    display: flex;
+    column-gap: 40px;
+
+    @include tablet {
+      column-gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+      width: 44px;
+      height: 44px;
+    }
+  }
+}
