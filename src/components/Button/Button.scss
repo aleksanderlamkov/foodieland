@@ -1,15 +1,33 @@
 .button {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
-  column-gap: 0.3em;
-  padding: 8px 12px;
-  color: var(--color-black);
-  background-color: var(--color-white);
-  border: var(--border);
-  border-radius: var(--border-radius-m);
+  column-gap: 15px;
+  min-width: 200px;
+  height: 60px;
+  padding-inline: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.28px;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: 2px solid var(--color-black);
+  border-radius: var(--border-radius-s);
 
   @include hover {
-    color: var(--color-white);
-    background-color: var(--color-accent);
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+  &--secondary {
+    color: var(--color-black);
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+
+    @include hover {
+      color: var(--color-white);
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
   }
 }

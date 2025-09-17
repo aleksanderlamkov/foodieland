@@ -26,7 +26,7 @@ h2,
 .h2 {
   @include fluid-text(48, 24);
 
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3,
@@ -52,7 +52,7 @@ h5,
 
 h6,
 .h6 {
-  @include fluid-text(20, 16);
+  @include fluid-text(18, 16);
 
   font-weight: 400;
 }

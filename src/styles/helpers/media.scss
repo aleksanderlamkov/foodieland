@@ -1,4 +1,5 @@
 $laptop: 1440px;
+$laptop-s: 1280px;
 $tablet: 1023px;
 $mobile: 767px;
 $mobile-s: 480px;
@@ -11,6 +12,18 @@ $mobile-s: 480px;
 
 @mixin laptop {
   @media (width <= $laptop) {
+    @content;
+  }
+}
+
+@mixin laptop-s-above {
+  @media (width > $laptop-s) {
+    @content;
+  }
+}
+
+@mixin laptop-s {
+  @media (width <= $laptop-s) {
     @content;
   }
 }
