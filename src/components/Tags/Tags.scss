@@ -1,0 +1,32 @@
+.tags {
+  --tagsListGapX: 24px;
+  --tagsItemPadding: 0;
+  --tagsItemBackgroundColor: transparent;
+  --tagsItemBorderRadius: 0;
+
+  &--rounded {
+    --tagsListGapX: 16px;
+    --tagsItemPadding: 8px 16px;
+    --tagsItemBackgroundColor: var(--color-gray-50);
+    --tagsItemBorderRadius: var(--border-radius);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px var(--tagsListGapX);
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: var(--tagsItemPadding);
+    background-color: var(--tagsItemBackgroundColor);
+    border-radius: var(--tagsItemBorderRadius);
+  }
+
+  &__label {
+    color: var(--color-gray-600);
+  }
+}

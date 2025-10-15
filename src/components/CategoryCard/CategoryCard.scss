@@ -1,11 +1,48 @@
 .category-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 50px;
-  padding: 0 40px 30px;
-  border-radius: var(--border-radius);
+  --categoryCardImageOffsetTop: 50px;
 
+  padding-top: var(--categoryCardImageOffsetTop);
 
+  &__body {
+    --categoryCardColorStart: color-mix(
+      in srgb,
+      var(--categoryCardColor),
+      transparent 100%
+    );
+    --categoryCardColorEnd: color-mix(
+      in srgb,
+      var(--categoryCardColor),
+      transparent 90%
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: fluid(50, 20);
+    padding: 0 20px fluid(30, 20);
+    border-radius: var(--border-radius);
+    background-image: linear-gradient(
+      180deg,
+      var(--categoryCardColorStart) 0%,
+      var(--categoryCardColorEnd) 100%
+    );
+  }
+
+  &__image-wrapper {
+    position: relative;
+    margin-top: calc(-1 * var(--categoryCardImageOffsetTop));
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 20px;
+      left: 20px;
+      height: 100%;
+      width: 100%;
+      background: var(--catergodyCardImage) center / contain no-repeat;
+      filter: blur(10px);
+      opacity: 0.2;
+    }
+  }
 }

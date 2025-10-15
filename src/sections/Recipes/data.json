@@ -1,0 +1,129 @@
+[
+  {
+    "type": "recipe",
+    "title": "Big and Juicy Wagyu Beef Cheeseburger",
+    "tags": [
+      {
+        "iconName": "timer",
+        "label": "30 Minutes"
+      },
+      {
+        "iconName": "fork-knife",
+        "label": "Chicken"
+      }
+    ],
+    "imgSrc": "/src/assets/images/recipes/1.jpg",
+    "isLiked": true
+  },
+  {
+    "type": "recipe",
+    "title": "Big and Juicy Wagyu Beef Cheeseburger",
+    "tags": [
+      {
+        "iconName": "timer",
+        "label": "30 Minutes"
+      },
+      {
+        "iconName": "fork-knife",
+        "label": "Chicken"
+      }
+    ],
+    "imgSrc": "/src/assets/images/recipes/1.jpg"
+  },
+  {
+    "type": "recipe",
+    "title": "Big and Juicy Wagyu Beef Cheeseburger",
+    "tags": [
+      {
+        "iconName": "timer",
+        "label": "30 Minutes"
+      },
+      {
+        "iconName": "fork-knife",
+        "label": "Chicken"
+      }
+    ],
+    "imgSrc": "/src/assets/images/recipes/1.jpg"
+  },
+  {
+    "type": "recipe",
+    "title": "Big and Juicy Wagyu Beef Cheeseburger",
+    "tags": [
+      {
+        "iconName": "timer",
+        "label": "30 Minutes"
+      },
+      {
+        "iconName": "fork-knife",
+        "label": "Chicken"
+      }
+    ],
+    "imgSrc": "/src/assets/images/recipes/1.jpg"
+  },
+  {
+    "type": "recipe",
+    "title": "Big and Juicy Wagyu Beef Cheeseburger",
+    "tags": [
+      {
+        "iconName": "timer",
+        "label": "30 Minutes"
+      },
+      {
+        "iconName": "fork-knife",
+        "label": "Chicken"
+      }
+    ],
+    "imgSrc": "/src/assets/images/recipes/1.jpg"
+  },
+  {
+    "type": "banner",
+    "title": "Don’t forget to eat healthy food",
+    "linkLabel": "www.foodieland.com",
+    "imgSrc": "/src/assets/images/recipes/0.png"
+  },
+  {
+    "type": "recipe",
+    "title": "Big and Juicy Wagyu Beef Cheeseburger",
+    "tags": [
+      {
+        "iconName": "timer",
+        "label": "30 Minutes"
+      },
+      {
+        "iconName": "fork-knife",
+        "label": "Chicken"
+      }
+    ],
+    "imgSrc": "/src/assets/images/recipes/1.jpg"
+  },
+  {
+    "type": "recipe",
+    "title": "Big and Juicy Wagyu Beef Cheeseburger",
+    "tags": [
+      {
+        "iconName": "timer",
+        "label": "30 Minutes"
+      },
+      {
+        "iconName": "fork-knife",
+        "label": "Chicken"
+      }
+    ],
+    "imgSrc": "/src/assets/images/recipes/1.jpg"
+  },
+  {
+    "type": "recipe",
+    "title": "Big and Juicy Wagyu Beef Cheeseburger",
+    "tags": [
+      {
+        "iconName": "timer",
+        "label": "30 Minutes"
+      },
+      {
+        "iconName": "fork-knife",
+        "label": "Chicken"
+      }
+    ],
+    "imgSrc": "/src/assets/images/recipes/1.jpg"
+  }
+]

@@ -4,6 +4,7 @@ import Icon from '@/components/Icon'
 import { Image } from 'minista'
 import AuthorCard from '@/components/AuthorCard'
 import Button from '@/components/Button'
+import Tags from '@/components/Tags'
 
 export default (props) => {
   const {
@@ -35,16 +36,11 @@ export default (props) => {
         <div className="hero-card__description">
           <p>{description}</p>
         </div>
-        <div className="hero-card__tags">
-          <ul className="hero-card__tags-list">
-            {tags.map(({ iconName, label }) => (
-              <li className="hero-card__tags-item">
-                <Icon className name={iconName} hasFill />
-                <span className="hero-card__tags-label">{label}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <Tags
+          className="hero-card__tags"
+          type="rounded"
+          items={tags}
+        />
         <footer className="hero-card__footer">
           <AuthorCard
             className="hero-card__author"

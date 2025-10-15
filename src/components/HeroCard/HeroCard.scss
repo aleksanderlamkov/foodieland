@@ -78,25 +78,6 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
-
-    &-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    &-item {
-      display: inline-flex;
-      align-items: center;
-      column-gap: 10px;
-      padding: 8px 16px;
-      background-color: var(--color-gray-50);
-      border-radius: var(--border-radius);
-    }
-
-    &-label {
-      color: var(--color-gray-600);
-    }
   }
 
   &__footer {
