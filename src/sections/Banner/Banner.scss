@@ -1,0 +1,39 @@
+.banner {
+  padding-block: calc(2 * var(--section-padding-y));
+
+  &__inner {
+    display: flex;
+    align-items: end;
+    gap: 44px;
+
+    @include tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__body {
+    padding-bottom: 72px;
+  }
+
+  &__title {
+    letter-spacing: -2px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: fluid(72, 24);
+    }
+  }
+
+  &__image {
+    @include tablet-above {
+      max-width: 55%;
+    }
+  }
+}

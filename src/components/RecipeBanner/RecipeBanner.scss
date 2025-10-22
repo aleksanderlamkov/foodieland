@@ -1,0 +1,30 @@
+.recipe-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 24px;
+  height: 100%;
+  min-height: 360px;
+  padding: 40px 40px 32px;
+  text-align: center;
+  background:
+    var(--recipeBannerImg) center/auto 100% no-repeat,
+    linear-gradient(to bottom, #357255, #1c493c);
+  border-radius: var(--border-radius);
+
+  @include hover {
+    .recipe-banner__site {
+      color: var(--color-accent);
+    }
+  }
+
+  &__site {
+    color: color-mix(
+      in srgb,
+      var(--color-white) 60%,
+      transparent
+    );
+    transition-duration: inherit;
+  }
+}

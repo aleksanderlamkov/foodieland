@@ -29,7 +29,7 @@ export default (props) => {
       </a>
       <button
         className={clsx(
-          'recipe-card__button',
+          'recipe-card__like-button',
           isLiked && 'is-liked'
         )}
         type="button"

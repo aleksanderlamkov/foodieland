@@ -7,12 +7,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 16px;
+    gap: 24px 16px;
 
     @include mobile {
       flex-direction: column;
       align-items: start;
       row-gap: 20px;
     }
+
+    &--vertical {
+      flex-direction: column;
+
+      @include mobile-above {
+        text-align: center;
+      }
+    }
+  }
+
+  &__description {
+    max-width: 706px;
   }
 }

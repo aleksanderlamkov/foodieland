@@ -7,6 +7,7 @@ export default (props) => {
     className,
     title,
     titleId,
+    isHeaderVertical = false,
     description,
     linkLabel,
     children,
@@ -14,10 +15,16 @@ export default (props) => {
 
   return (
     <section
-      className={clsx('section', 'container', className)}
+      className={clsx('section', className)}
       aria-labelledby={titleId}
     >
-      <header className="section__header">
+      <header
+        className={clsx(
+          'section__header',
+          'container',
+          isHeaderVertical && 'section__header--vertical'
+        )}
+      >
         <h2 className="section__title" id={titleId}>
           {title}
         </h2>
@@ -36,7 +43,7 @@ export default (props) => {
           </Button>
         )}
       </header>
-      <div className="section__body">{children}</div>
+      <div className="section__body container">{children}</div>
     </section>
   )
 }

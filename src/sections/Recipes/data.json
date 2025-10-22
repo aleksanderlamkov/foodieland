@@ -78,8 +78,8 @@
   {
     "type": "banner",
     "title": "Don’t forget to eat healthy food",
-    "linkLabel": "www.foodieland.com",
-    "imgSrc": "/src/assets/images/recipes/0.png"
+    "site": "www.foodieland.com",
+    "bgImgSrc": "/src/assets/images/recipes/0.jpg"
   },
   {
     "type": "recipe",

@@ -1,0 +1,10 @@
+.instagram-view {
+  background-image: var(--gradient);
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: fluid(80, 24);
+  }
+}

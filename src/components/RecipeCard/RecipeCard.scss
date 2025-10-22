@@ -11,6 +11,7 @@
   }
 
   &__image {
+    width: 100%;
     border-radius: calc(var(--border-radius) / 3 * 2);
   }
 
@@ -18,7 +19,7 @@
     color: initial;
   }
 
-  &__button {
+  &__like-button {
     @include flex-center(true);
 
     position: absolute;
@@ -38,6 +39,17 @@
 
     &.is-liked {
       color: var(--color-accent);
+
+      svg {
+        filter: drop-shadow(
+          0 5px 10px
+          color-mix(
+            in srgb,
+            currentColor 20%,
+            transparent
+          )
+        );
+      }
     }
   }
 }
