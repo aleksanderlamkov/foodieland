@@ -31,6 +31,10 @@
     }
   }
 
+  &__button {
+    min-width: 180px;
+  }
+
   &__image {
     @include tablet-above {
       max-width: 55%;

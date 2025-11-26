@@ -13,7 +13,7 @@ export default () => {
           <div className="banner__description">
             <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
           </div>
-          <Button href="/">Learn More</Button>
+          <Button className="banner__button" href="/">Learn More</Button>
         </div>
         <Image
           className="banner__image"

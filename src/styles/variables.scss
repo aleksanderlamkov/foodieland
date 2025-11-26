@@ -3,12 +3,14 @@
   --color-black: #000000;
   --color-accent: #FF6363;
   --color-secondary: #E7FAFE;
+  --color-brand: #e7f9fd;
   --color-gray: rgb(0 0 0 / 0.1);
   --color-gray-50: rgb(0 0 0 / 0.05);
+  --color-gray-400: rgb(0 0 0 / 0.4);
   --color-gray-600: rgb(0 0 0 / 0.6);
   --color-gray-alt: #DBE2E5;
 
-  --gradient: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #e7f9fd 100%);
+  --gradient: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, var(--color-brand) 100%);
   --drop-shadow: 10px 20px 40px rgba(41, 64, 70, 0.10);
 
   --border-radius-m: 60px;

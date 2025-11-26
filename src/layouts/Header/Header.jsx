@@ -22,7 +22,7 @@ export default (props) => {
         <nav className="header__menu" data-js-mobile-menu-overlay="">
           <ul className="header__menu-list">
             {menuItems.map(({ label, href }) => (
-              <li className="header__menu-item">
+              <li className="header__menu-item" key={label}>
                 <a
                   className={clsx(
                     'header__menu-link',

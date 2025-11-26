@@ -1,18 +1,40 @@
 .recipe-card {
+  --recipeCardImgMarginBottom: 24px;
+  --recipeCardTitleMarginBottom: 24px;
+  --recipeCardPadding: 16px 16px 32px;
+  --recipeCardBgImg: var(--gradient);
+  --recipeCardLikeButtonOffset: 36px;
+
   position: relative;
+
+  &--transparent {
+    --recipeCardImgMarginBottom: 16px;
+    --recipeCardPadding: 0;
+    --recipeCardBgImg: none;
+    --recipeCardLikeButtonOffset: 16px;
+  }
 
   &__link {
     display: flex;
     flex-direction: column;
-    row-gap: 24px;
-    padding: 16px 16px 32px;
-    background-image: var(--gradient);
+    padding: var(--recipeCardPadding);
+    background-image: var(--recipeCardBgImg);
     border-radius: var(--border-radius);
   }
 
   &__image {
     width: 100%;
     border-radius: calc(var(--border-radius) / 3 * 2);
+
+    &:not(:last-child) {
+      margin-bottom: var(--recipeCardImgMarginBottom);
+    }
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: var(--recipeCardTitleMarginBottom);
+    }
   }
 
   &__tags {
@@ -23,8 +45,8 @@
     @include flex-center(true);
 
     position: absolute;
-    top: 36px;
-    right: 36px;
+    top: var(--recipeCardLikeButtonOffset);
+    right: var(--recipeCardLikeButtonOffset);
     width: 48px;
     aspect-ratio: 1;
     padding: 0;
